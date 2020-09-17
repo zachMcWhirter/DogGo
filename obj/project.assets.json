@@ -8158,11 +8158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zachm\\source\\repos\\DogGo\\DogGo\\DogGo.csproj",
+      "projectUniqueName": "C:\\Users\\zachm\\workspace\\csharp\\exercises\\DogGo\\DogGo\\DogGo.csproj",
       "projectName": "DogGo",
-      "projectPath": "C:\\Users\\zachm\\source\\repos\\DogGo\\DogGo\\DogGo.csproj",
+      "projectPath": "C:\\Users\\zachm\\workspace\\csharp\\exercises\\DogGo\\DogGo\\DogGo.csproj",
       "packagesPath": "C:\\Users\\zachm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zachm\\source\\repos\\DogGo\\DogGo\\obj\\",
+      "outputPath": "C:\\Users\\zachm\\workspace\\csharp\\exercises\\DogGo\\DogGo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zachm\\AppData\\Roaming\\NuGet\\NuGet.Config",
