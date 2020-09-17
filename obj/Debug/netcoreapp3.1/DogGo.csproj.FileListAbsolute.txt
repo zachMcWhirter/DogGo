@@ -847,3 +847,5 @@ C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\st
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\DogGo.dll
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\DogGo.pdb
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\DogGo.genruntimeconfig.cache
+C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Delete.cshtml.g.cs
+C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Edit.cshtml.g.cs
