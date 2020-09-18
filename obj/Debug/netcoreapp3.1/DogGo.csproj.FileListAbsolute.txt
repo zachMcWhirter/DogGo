@@ -853,3 +853,4 @@ C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Ra
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Create.cshtml.g.cs
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Edit.cshtml.g.cs
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Delete.cshtml.g.cs
+C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Details.cshtml.g.cs

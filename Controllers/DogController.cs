@@ -94,27 +94,21 @@ namespace DogGo.Controllers
         }
 
 
+        */
         
         // GET: DogController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
-        }
-        // POST: DogController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
+            Dog dog = _dogRepo.GetDogById(id);
+
+            if (dog == null)
             {
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            catch
-            {
-                return View();
-            }
+
+            return View(dog);
         }
-        */
+        
         // GET: DogController/Edit/5
         public ActionResult Edit(int id)
         {
