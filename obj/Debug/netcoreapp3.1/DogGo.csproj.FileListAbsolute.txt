@@ -849,3 +849,8 @@ C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Do
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\DogGo.genruntimeconfig.cache
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Delete.cshtml.g.cs
 C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Edit.cshtml.g.cs
+C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Index.cshtml.g.cs
+C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Create.cshtml.g.cs
+C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Edit.cshtml.g.cs
+C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Delete.cshtml.g.cs
+C:\Users\zachm\workspace\csharp\exercises\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Details.cshtml.g.cs
