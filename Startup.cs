@@ -25,14 +25,12 @@ namespace DogGo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
-
             services.AddTransient<IWalkerRepository, WalkerRepository>();
-
             services.AddTransient<IOwnerRepository, OwnerRepository>();
-
             services.AddTransient<IDogRepository, DogRepository>();
-
             services.AddTransient<INeighborhoodRepository, NeighborhoodRepository>();
+
+            //Auth goes here
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +51,7 @@ namespace DogGo
 
             app.UseRouting();
 
+            //app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
