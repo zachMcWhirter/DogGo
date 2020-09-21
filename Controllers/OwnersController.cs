@@ -41,7 +41,7 @@ namespace DogGo.Controllers
         // GET: OwnersController/Details/5
         public ActionResult Details(int id)
         {
-            //  Here are the required elements needed to render the view the user should see
+            //  List the required elements needed to render the view the user should see
 
             // 1: An Owner object
             Owner owner = _ownerRepo.GetOwnerById(id);
@@ -95,14 +95,18 @@ namespace DogGo.Controllers
         // GET: Owners/Edit/5
         public ActionResult Edit(int id)
         {
+            //  List the required elements needed to render the view the user should see
+
             Owner owner = _ownerRepo.GetOwnerById(id);
+            List<Neighborhood> neighborhoods = _neighborhoodRepo.GetAll();
 
-            if (owner == null)
+            OwnerFormViewModel vm = new OwnerFormViewModel()
             {
-                return NotFound();
-            }
-
-            return View(owner);
+                Owner = owner,
+                Neighborhoods = neighborhoods
+            };
+                        
+            return View(vm);
         }
 
         // POST: OwnersController/Edit/5
@@ -118,7 +122,12 @@ namespace DogGo.Controllers
             }
             catch (Exception ex)
             {
-                return View(owner);
+                OwnerFormViewModel vm = new OwnerFormViewModel()
+                {
+                    Owner = owner,
+                    Neighborhoods = _neighborhoodRepo.GetAll()
+                };
+                return View(vm);
             }
         }
 
