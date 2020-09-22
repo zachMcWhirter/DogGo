@@ -56,16 +56,7 @@ namespace DogGo.Repositories
                             Duration = reader.GetInt32(reader.GetOrdinal("Duration")),
                             DogId = reader.GetInt32(reader.GetOrdinal("Id")),
                             WalkerId = reader.GetInt32(reader.GetOrdinal("WalkerId")),
-                            //OwnerId = reader.GetInt32(reader.GetOrdinal("OwnerId")),
-                            Dog = new Dog()
-                            {
-                                Name = reader.GetString(reader.GetOrdinal("DogName"))
-                            },
-                            Walker = new Walker()
-                            {
-                                Name = reader.GetString(reader.GetOrdinal("WalkerName"))
-                            },
-                            Owner = new Owner()
+                            Owner = new Owner
                             {
                                 Id = reader.GetInt32(reader.GetOrdinal("OwnerId")),
                                 Name = reader.GetString(reader.GetOrdinal("OwnerName")),
@@ -91,12 +82,13 @@ namespace DogGo.Repositories
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"
-                    SELECT w.Id, w.Date, w.Duration, w.WalkerId, w.DogId, dw.[Name], dw.NeighborhoodId, dw.ImageUrl, o.Id AS OwnerId, o.[Name] AS OwnerName,
-                    dw.Name as WalkerName
+                    SELECT w.Id, w.Date, w.Duration, w.WalkerId, w.DogId, dw.[Name], dw.NeighborhoodId, dw.ImageUrl, o.Id AS OwnerId, 
+                    o.[Name] AS OwnerName,dw.Name as WalkerName, n.[Name]
                     FROM Walks w 
                     JOIN Walker dw ON w.WalkerId = dw.Id
                     JOIN Dog d ON w.DogId = d.Id
                     JOIN Owner o ON d.OwnerId = o.Id
+                    JOIN Neighborhood n ON dw.NeighborhoodId = n.Id
                     WHERE dw.Id = @walkerId
                     ";
 
@@ -119,8 +111,9 @@ namespace DogGo.Repositories
                             {
                                 Id = reader.GetInt32(reader.GetOrdinal("OwnerId")),
                                 Name = reader.GetString(reader.GetOrdinal("OwnerName")),
-
                             }
+
+
                         };
                         walks.Add(walk);
                     }

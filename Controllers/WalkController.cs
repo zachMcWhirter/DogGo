@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DogGo.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,9 @@ namespace DogGo.Controllers
 {
     public class WalkController : Controller
     {
+
+        private readonly IWalkRepository _walkRepo;
+
         // GET: WalkController
         public ActionResult Index()
         {
