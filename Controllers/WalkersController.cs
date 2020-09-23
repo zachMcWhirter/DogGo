@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using DogGo.Models;
 using DogGo.Models.ViewModels;
 using DogGo.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DogGo.Controllers
 {
+    
     public class WalkersController : Controller
     {
 
@@ -48,13 +50,16 @@ namespace DogGo.Controllers
             return View(vm);
         }
 
+
         // GET: WalkersController/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
         }
 
         // POST: WalkersController/Create
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -70,11 +75,13 @@ namespace DogGo.Controllers
         }
 
         // GET: WalkersController/Edit/5
+        [Authorize]
         public ActionResult Edit(int id)
         {
             return View();
         }
 
+        [Authorize]
         // POST: WalkersController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -91,12 +98,14 @@ namespace DogGo.Controllers
         }
 
         // GET: WalkersController/Delete/5
+        [Authorize]
         public ActionResult Delete(int id)
         {
             return View();
         }
 
         // POST: WalkersController/Delete/5
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
